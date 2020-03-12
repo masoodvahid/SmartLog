@@ -1,0 +1,249 @@
+body {
+    background-color: black;
+    background-image: radial-gradient( rgba(0, 150, 0, 0.75), black 120%);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 2rem;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: -2px 2px 2px #010101;
+}
+
+body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+      pointer-events: none;
+    }
+
+::selection {
+    background: #0080FF;
+    text-shadow: none;
+  }
+
+pre {
+    margin: 0;
+}
+
+.header{
+  float: right;
+}
+
+ul {  
+  margin-top: -5px; 
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  color: #08a608;
+  font-size: 80%;
+}
+
+li:hover {
+  color: #3bfc3b;  
+}
+
+
+li > ul {
+  padding-left: 0;
+}
+
+
+.blur{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+#lockscreen{
+  width: 100%;
+  height: 100%;
+  background-color:#353134b0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+::selection {
+  background:  #0080FF;
+  text-shadow: none;
+}
+
+#tail {
+  overflow-y: scroll;
+  width: 100%;
+  height: 87%; 
+}
+
+.unlocker {
+  display: grid;
+  margin: 130px auto;
+  width: 320px;
+  position: relative;
+  z-index: 1;
+}
+
+.lock_logo {
+	max-width: 320px;
+	padding-bottom: 40px;
+	filter: drop-shadow(0px 4px 0px #56963f);
+	transition: 0.6s;
+	margin: 0 auto;
+}
+
+.lock_logo:hover {
+	filter: drop-shadow(0px 0px 17px #4cff0b);
+}
+
+button {
+  height: 40px;  
+  border-radius: 5px;
+  border: none;
+  font-family: times new roman;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #90d328;
+  cursor: pointer;
+}
+
+input {
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+#error {
+  text-align: center;
+  margin-top: 10px;
+  color: yellow;
+  text-shadow: none;
+}
+
+::selection {
+
+  background: 
+
+  #0080FF;
+  text-shadow: none;
+
+}
+::selection {
+
+  background: #0080FF;
+  text-shadow: none;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.file_list {
+  padding-left: 0px;
+}
+
+.file_list > li {
+  display: block;
+  font-size: 120%;
+}
+
+.file_list > li > ul > li {
+  color: white;
+  text-shadow: none;
+}
+
+.download {
+  color: #2dfdfd;
+}
+
+.delete {
+	color: yellow;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;	
+	background: url("../img/br_down.png") #034E03 no-repeat calc(100% - 5px) !important;
+}
+
+
+
+#filter {	
+  min-width: 180px;
+  font-size: 100%;
+	border: none;
+	border-radius: 5px;
+	height: 25px;
+	padding-left: 5px;
+	color: #32d819;
+	font-family: inherit;
+}
+
+.search {
+	border: 1px solid;
+	height: 30px;
+	width: 286px;
+	position: absolute;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: #034703;
+	color: #2fcb18;
+	display: inline-flex;
+	text-shadow: none;
+}
+
+#search_input {
+	background-color: transparent;
+	height: 25px;
+	width: 210px;
+	text-align: left;
+	color: #2fcb18;
+	padding-left: 9px;
+}
+
+#search_count {
+	border-left: 1px solid;
+	padding: 6px 8px;
+	border-radius: 0 4px 4px 0;
+	background-color: #36e536;
+	color: #034303;
+	width: 50px;
+	text-align: center;
+}
+
+.logo {
+  max-height: 34px;
+  vertical-align: middle;
+}
+
+.hide {
+  display: none;
+}
+
+#keeplive {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
